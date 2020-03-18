@@ -1,4 +1,6 @@
+import { Header, Nav, Main, Footer } from "./components";
 import * as state from "./store";
+import * as components from "./components";
 
 function render() {
     document.querySelector("#root").innerHTML = `
@@ -21,4 +23,3 @@ function addNavEventListener() {
 }
 render(state.Home, addNavEventListener());
 
-import * as components from "./components";

@@ -1,27 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="author" content="Arthur Caine III">
-
-    <title>Envisioning Your Future</title>
-
-    <!-- Font Awesome Library CDN Connection -->
-    <script src="https://use.fontawesome.com/9a77ea3aef.js"></script>
-
-    <link rel="stylesheet" href="/da232d78aa810382f2dcdceae308ff8e.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Aclonica|Vidaloka&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css?family=Vidaloka&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
-    <!-- top-banner and left-side-nav will be stationary on every page to keep uniformity -->
+export default () => `
+<!-- top-banner and left-side-nav will be stationary on every page to keep uniformity -->
     <div class="top-banner">
         <h1>Envisioning Your Future</h1>
     </div>
@@ -55,8 +33,4 @@
 
     </div>
     </div>
-    <script>"index.js";</script>
-</body>
-
-
-</html>
+`;
