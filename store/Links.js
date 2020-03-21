@@ -1,8 +1,9 @@
 export default [
-    { title: "Home", text: "Sign In" },
     { title: "Summary", text: "Summary" },
+    { title: "BillPay", text: "Bill Pay" },
     { title: "Education", text: "Education" },
     { title: "Your Vehicle", text: "Your Vehicle" },
-    { title: "About Us", text: "About Us" },
-    { title: "Contact Us", text: "Contact Us" }
+    { title: "Contact Us", text: "Contact Us" },
+    { title: "AboutUs", text: "About Us" },
+    { title: "ProfileSettings", text: "Profile Settings" }
 ];

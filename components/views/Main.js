@@ -7,6 +7,6 @@ export default () => `
     <div class="main-section">
 
     <div class="left-side-nav">
-        <a href="html\about-us.html">About Us</a>
+        
     </div>
 `;
