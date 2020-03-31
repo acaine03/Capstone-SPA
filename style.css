@@ -55,6 +55,7 @@ a:hover {
 
 .main-section {
     display: flex;
+    flex-flow: row;
 }
 
 .left-side-nav {
@@ -117,16 +118,25 @@ a:hover {
 .paragraph-1 {
     font: Vidaloka;
     color: black;
+    font-size: 1.1em;
+    margin-left: 0.5em;
+    margin-right: 5em;
 }
 
 .paragraph-2 {
     font: Vidaloka;
     color: black;
+    font-size: 1.1em;
+    margin-left: 0.5em;
+    margin-right: 5em;
 }
 
 .paragraph-3 {
     font: Vidaloka;
     color: black;
+    font-size: 1.1em;
+    margin-left: 0.5em;
+    margin-right: 5em;
 }
 
 footer {

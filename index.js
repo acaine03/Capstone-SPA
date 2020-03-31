@@ -8,7 +8,7 @@ const router = new Navigo(window.location.origin);
 
 router
 .on({
-    ":page": params => render(state[capitalize(params.page)]),
+    ":page": params => render(state[(params.page)]),
     "/": () => render(state.SignIn)
 })
 .resolve();
@@ -22,7 +22,7 @@ function render(st) {console.log(st)
     `;
 }
 
-
-
 router.updatePageLinks();
+
+
 

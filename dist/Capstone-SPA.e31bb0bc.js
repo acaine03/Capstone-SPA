@@ -265,7 +265,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "\n<footer>\n<div class=\"footer\">\n    <h6>&copy; 2020 Envisioning Your Future</h6>\n</div>\n</footer>\n";
+  return "\n<footer>\n    <div class=\"footer\">\n        <h6>&copy; 2020 Envisioning Your Future</h6>\n    </div>\n</footer>\n";
 };
 
 exports.default = _default;
@@ -19607,7 +19607,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 var router = new _navigo.default(window.location.origin);
 router.on({
   ":page": function page(params) {
-    return render(state[(0, _lodash.capitalize)(params.page)]);
+    return render(state[params.page]);
   },
   "/": function _() {
     return render(state.SignIn);
@@ -19648,7 +19648,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52155" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53230" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
