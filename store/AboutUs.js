@@ -1,1 +1,1 @@
-export default { header: "AboutUs", view: "AboutUs" }
+export default { header: "About Us", view: "AboutUs" }

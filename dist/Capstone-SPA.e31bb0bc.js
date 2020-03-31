@@ -140,7 +140,7 @@ exports.default = void 0;
 
 var _default = function _default(links) {
   return "\n<div class=\"main-section\">\n\n<div class=\"left-side-nav\">\n  <ul>\n  ".concat(links.map(function (link) {
-    return "<a href=\"/".concat(link.title, "\">").concat(link.text, "</a><br>");
+    return "<a href=\"/".concat(link.title, "\">").concat(link.text, "</a><br><br>");
   }).join(""), "\n  </ul>\n</div>\n");
 };
 
@@ -167,7 +167,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "\n<div class=\"right-side-content\">\n\n    <div class=\"about-us-heading\">\n        <h1>About Us</h1>\n    </div>\n\n    <div class=\"paragraph-1\">\n        <p>Envisioning Your Future(EYF) is designed to help you if you:<br>\n            have trouble managing finances, buying a decent vehicle, need help finding a place \n            to continue education, finding a place to live within your financial means, furnishings for\n            your home and seeking counseling for all of the above and more!\n        </p>\n    </div>\n\n    <div class=\"paragraph-2\">\n        <p>EYF understands that majority of us will not receive education in high schools on how to\n            live in the \"real world\". Growing up, for most of us, results in a never ending cycle of living \n            paycheck to paycheck because that's what is \"normal\" in the world today. EYF wants to stop this\n            cycle and give you something to look forward to -- financial freedom.\n        </p>\n    </div>\n\n    <div class=\"paragraph-3\">\n        <p>Financial freedom doesn't mean you'll be rich or wealthy. It simply means that you will be able to \n            live comfortably and not have to worry about if you'll have enough money to pay the rent,\n            or, if your vehicle gives you a \"surprise\" that will need immediate attention to be fixed.\n        </p>\n</div>\n";
+  return "\n    <div class=\"right-side-content\">\n\n        <div class=\"about-us-heading\">\n            <h1>About Us</h1>\n        </div>\n\n        <div class=\"paragraph-1\">\n            <p>Envisioning Your Future(EYF) is designed to help you if you:<br>\n                have trouble managing finances, buying a decent vehicle, need help finding a place \n                to continue education, finding a place to live within your financial means, furnishings for\n                your home and seeking counseling for all of the above and more!\n            </p>\n        </div>\n\n        <div class=\"paragraph-2\">\n            <p>EYF understands that majority of us will not receive education in high schools on how to\n                live in the \"real world\". Growing up, for most of us, results in a never ending cycle of living \n                paycheck to paycheck because that's what is \"normal\" in the world today. EYF wants to stop this\n                cycle and give you something to look forward to -- financial freedom.\n            </p>\n        </div>\n\n        <div class=\"paragraph-3\">\n            <p>Financial freedom doesn't mean you'll be rich or wealthy. It simply means that you will be able to \n                live comfortably and not have to worry about if you'll have enough money to pay the rent,\n                or, if your vehicle gives you a \"surprise\" that will need immediate attention to be fixed.\n            </p>\n        </div>\n    </div>\n";
 };
 
 exports.default = _default;
@@ -338,10 +338,10 @@ var _default = [{
   title: "Education",
   text: "Education"
 }, {
-  title: "Your Vehicle",
+  title: "YourVehicle",
   text: "Your Vehicle"
 }, {
-  title: "Contact Us",
+  title: "ContactUs",
   text: "Contact Us"
 }, {
   title: "AboutUs",
@@ -361,7 +361,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _default = {
-  header: "AboutUs",
+  header: "About Us",
   view: "AboutUs"
 };
 exports.default = _default;
@@ -19610,7 +19610,7 @@ router.on({
     return render(state[(0, _lodash.capitalize)(params.page)]);
   },
   "/": function _() {
-    return render(state.Home);
+    return render(state.SignIn);
   }
 }).resolve();
 
@@ -19619,7 +19619,6 @@ function render(st) {
   document.querySelector("#root").innerHTML = "\n    ".concat((0, components.Header)(st), "\n    ").concat((0, components.Nav)(state.Links), "\n    ").concat((0, components.Main)(st), "\n    ").concat((0, components.Footer)(), "\n    ");
 }
 
-render(state.SignIn);
 router.updatePageLinks();
 },{"./components":"components/index.js","./store":"store/index.js","navigo":"node_modules/navigo/lib/navigo.min.js","lodash":"node_modules/lodash/lodash.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -19649,7 +19648,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59391" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52155" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
