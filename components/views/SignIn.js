@@ -1,5 +1,4 @@
 export default () => `
-
     <div class="right-side-content">
         <div class="username">
             <input type="text" placeholder="Enter your email address" autofocus="" id="email">
@@ -21,6 +20,5 @@ export default () => `
             <a href="">Forgot Password</a>
         </div>
 
-    </div>
     </div>
 `;

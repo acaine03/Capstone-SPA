@@ -145,6 +145,8 @@ var _default = function _default(links) {
 };
 
 exports.default = _default;
+},{}],"img/summary.jpg":[function(require,module,exports) {
+module.exports = "/summary.77b4afbc.jpg";
 },{}],"components/views/Home.js":[function(require,module,exports) {
 "use strict";
 
@@ -153,12 +155,14 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
+var summaryPage = require('../../img/summary.jpg');
+
 var _default = function _default() {
-  return "";
+  return "\n\n    <div class=\"right-side-content\">\n    \n        <div class=\"home-nav\">\n\n          <img src=\"".concat(summaryPage, "\" class=\"summary\">\n          <img src=\"\">\n          <img src=\"\">\n          <img src=\"\">\n          <img src=\"\">\n          <img src=\"\">\n          <img src=\"\">\n\n        </div>\n\n    </div>\n");
 };
 
 exports.default = _default;
-},{}],"components/views/AboutUs.js":[function(require,module,exports) {
+},{"../../img/summary.jpg":"img/summary.jpg"}],"components/views/AboutUs.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -193,7 +197,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "\n\n    <div class=\"right-side-content\">\n        <div class=\"username\">\n            <input type=\"text\" placeholder=\"Enter your email address\" autofocus=\"\" id=\"email\">\n        </div>\n\n        <div class=\"password\">\n            <input type=\"password\" placeholder=\"Password\" autofocus=\"\" id=\"pass\" name=\"password\" minlength=\"8\" required=\"\">\n        </div>\n\n        <div class=\"sign-in-button\">\n            <button>Sign in</button>\n        </div>\n\n        <div class=\"forgot-email\">\n            <a href=\"\">Forgot Email</a>\n        </div>\n\n        <div class=\"forgot-password\">\n            <a href=\"\">Forgot Password</a>\n        </div>\n\n    </div>\n    </div>\n";
+  return "\n    <div class=\"right-side-content\">\n        <div class=\"username\">\n            <input type=\"text\" placeholder=\"Enter your email address\" autofocus=\"\" id=\"email\">\n        </div>\n\n        <div class=\"password\">\n            <input type=\"password\" placeholder=\"Password\" autofocus=\"\" id=\"pass\" name=\"password\" minlength=\"8\" required=\"\">\n        </div>\n\n        <div class=\"sign-in-button\">\n            <button>Sign in</button>\n        </div>\n\n        <div class=\"forgot-email\">\n            <a href=\"\">Forgot Email</a>\n        </div>\n\n        <div class=\"forgot-password\">\n            <a href=\"\">Forgot Password</a>\n        </div>\n\n    </div>\n";
 };
 
 exports.default = _default;
@@ -329,6 +333,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _default = [{
+  title: "Home",
+  text: "Home"
+}, {
   title: "Summary",
   text: "Summary"
 }, {
@@ -19648,7 +19655,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53230" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61296" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

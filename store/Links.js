@@ -1,4 +1,5 @@
 export default [
+    { title: "Home", text: "Home"},
     { title: "Summary", text: "Summary" },
     { title: "BillPay", text: "Bill Pay" },
     { title: "Education", text: "Education" },
