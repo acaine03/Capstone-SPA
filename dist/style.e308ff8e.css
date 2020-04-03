@@ -63,7 +63,7 @@ a:hover {
     width: 15vw;
     background-color: #6F0765;
     font-family: "Vidaloka";
-    font-size: 1.4em;
+    font-size: 1.3em;
     min-height: 400px;
 }
 
@@ -143,11 +143,21 @@ a:hover {
 .home-nav {
     font: "Vidaloka";
     color: #0900C3;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 2%;
 }
 
 .home-nav img {
-    border-radius: 20%;
+    border-radius: 10%;
     max-block-size: 10em;
+}
+
+.home-nav a {
+    font-family: "Vidaloka";
+    font-size: 0.9em;
+    text-align: center;
 }
 
 footer {

@@ -140,13 +140,25 @@ exports.default = void 0;
 
 var _default = function _default(links) {
   return "\n<div class=\"main-section\">\n\n<div class=\"left-side-nav\">\n  <ul>\n  ".concat(links.map(function (link) {
-    return "<a href=\"/".concat(link.title, "\">").concat(link.text, "</a><br><br>");
+    return "<a href=\"/".concat(link.title, "\">").concat(link.text, "</a><br>");
   }).join(""), "\n  </ul>\n</div>\n");
 };
 
 exports.default = _default;
 },{}],"img/summary.jpg":[function(require,module,exports) {
 module.exports = "/summary.77b4afbc.jpg";
+},{}],"img/education.jpg":[function(require,module,exports) {
+module.exports = "/education.747517af.jpg";
+},{}],"img/vehicle.jpg":[function(require,module,exports) {
+module.exports = "/vehicle.24b8536d.jpg";
+},{}],"img/banking.jpg":[function(require,module,exports) {
+module.exports = "/banking.5a936aab.jpg";
+},{}],"img/pay-bills.jpg":[function(require,module,exports) {
+module.exports = "/pay-bills.598c7cc1.jpg";
+},{}],"img/apartment.jpg":[function(require,module,exports) {
+module.exports = "/apartment.8fc60fd1.jpg";
+},{}],"img/counseling.jpg":[function(require,module,exports) {
+module.exports = "/counseling.ad6879c3.jpg";
 },{}],"components/views/Home.js":[function(require,module,exports) {
 "use strict";
 
@@ -157,12 +169,24 @@ exports.default = void 0;
 
 var summaryPage = require('../../img/summary.jpg');
 
+var educationPage = require('../../img/education.jpg');
+
+var vehiclePage = require('../../img/vehicle.jpg');
+
+var bankingPage = require('../../img/banking.jpg');
+
+var billPayPage = require('../../img/pay-bills.jpg');
+
+var apartmentsPage = require('../../img/apartment.jpg');
+
+var counselingPage = require('../../img/counseling.jpg');
+
 var _default = function _default() {
-  return "\n\n    <div class=\"right-side-content\">\n    \n        <div class=\"home-nav\">\n\n          <img src=\"".concat(summaryPage, "\" class=\"summary\">\n          <img src=\"\">\n          <img src=\"\">\n          <img src=\"\">\n          <img src=\"\">\n          <img src=\"\">\n          <img src=\"\">\n\n        </div>\n\n    </div>\n");
+  return "\n\n    <div class=\"right-side-content\">\n    \n        <div class=\"home-nav\">\n\n          <a><img src=\"".concat(summaryPage, "\" class=\"summary\"><figcaption>Summary</figcaption></a>\n          <a><img src=\"").concat(educationPage, "\" class=\"education\"><figcaption>Education</figcaption></a>\n          <a><img src=\"").concat(vehiclePage, "\" class=\"vehicle\"><figcaption>Your Vehicle</figcaption></a>\n          <a><img src=\"").concat(apartmentsPage, "\" class=\"apartments\"><figcaption>Apartments</figcaption></a>\n          <a><img src=\"").concat(billPayPage, "\" class=\"bill pay\"><figcaption>Bill Pay</figcaption></a>\n          <a><img src=\"").concat(bankingPage, "\" class=\"banking\"><figcaption>Banking</figcaption></a>\n          <a><img src=\"").concat(counselingPage, "\" class=\"counseling\"><figcaption>Counseling</figcaption></a>\n\n        </div>\n\n    </div>\n");
 };
 
 exports.default = _default;
-},{"../../img/summary.jpg":"img/summary.jpg"}],"components/views/AboutUs.js":[function(require,module,exports) {
+},{"../../img/summary.jpg":"img/summary.jpg","../../img/education.jpg":"img/education.jpg","../../img/vehicle.jpg":"img/vehicle.jpg","../../img/banking.jpg":"img/banking.jpg","../../img/pay-bills.jpg":"img/pay-bills.jpg","../../img/apartment.jpg":"img/apartment.jpg","../../img/counseling.jpg":"img/counseling.jpg"}],"components/views/AboutUs.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -339,17 +363,23 @@ var _default = [{
   title: "Summary",
   text: "Summary"
 }, {
-  title: "BillPay",
-  text: "Bill Pay"
-}, {
   title: "Education",
   text: "Education"
 }, {
   title: "YourVehicle",
   text: "Your Vehicle"
 }, {
-  title: "ContactUs",
-  text: "Contact Us"
+  title: "Apartments",
+  text: "Apartments"
+}, {
+  title: "BillPay",
+  text: "Bill Pay"
+}, {
+  title: "Banking",
+  text: "Banking"
+}, {
+  title: "Counseling",
+  text: "Counseling"
 }, {
   title: "AboutUs",
   text: "About Us"
@@ -19655,7 +19685,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61296" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62576" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
