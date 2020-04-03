@@ -65,6 +65,7 @@ a:hover {
     font-family: "Vidaloka";
     font-size: 1.3em;
     min-height: 400px;
+    line-height: 170%;
 }
 
 .left-side-nav a {

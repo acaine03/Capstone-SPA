@@ -195,7 +195,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "\n    <div class=\"right-side-content\">\n\n        <div class=\"about-us-heading\">\n            <h1>About Us</h1>\n        </div>\n\n        <div class=\"paragraph-1\">\n            <p>Envisioning Your Future(EYF) is designed to help you if you:<br>\n                have trouble managing finances, buying a decent vehicle, need help finding a place \n                to continue education, finding a place to live within your financial means, furnishings for\n                your home and seeking counseling for all of the above and more!\n            </p>\n        </div>\n\n        <div class=\"paragraph-2\">\n            <p>EYF understands that majority of us will not receive education in high schools on how to\n                live in the \"real world\". Growing up, for most of us, results in a never ending cycle of living \n                paycheck to paycheck because that's what is \"normal\" in the world today. EYF wants to stop this\n                cycle and give you something to look forward to -- financial freedom.\n            </p>\n        </div>\n\n        <div class=\"paragraph-3\">\n            <p>Financial freedom doesn't mean you'll be rich or wealthy. It simply means that you will be able to \n                live comfortably and not have to worry about if you'll have enough money to pay the rent,\n                or, if your vehicle gives you a \"surprise\" that will need immediate attention to be fixed.\n            </p>\n        </div>\n    </div>\n";
+  return "\n    <div class=\"right-side-content\">\n\n        <div class=\"about-us-heading\">\n            <h1>About Us</h1>\n        </div>\n\n        <div class=\"paragraph-1\">\n            <p>Envisioning Your Future(EYF) is designed to help, mainly, young adults who are about to, \n                or have recently graduated high school. EYF is open for anyone who is looking for guidance on\n                managing finances, buying a decent vehicle, needing help finding a place \n                to continue education, finding a place to live within your financial means, furnishings for\n                your home and seeking counseling for all of the above and more! EYF's goal is to educate young adults\n                about finances and show them how to stay out of a lot of debt.\n            </p>\n        </div>\n\n        <div class=\"paragraph-2\">\n            <p>EYF understands that majority of us will not, or have not, received education in high schools on how to\n                live in the \"real world\". Growing up, for most of us, resulted in a never ending cycle of living \n                paycheck to paycheck because that's what is \"normal\" in the world today. EYF wants to stop this\n                cycle and give you something to look forward to -- financial freedom.\n            </p>\n        </div>\n\n        <div class=\"paragraph-3\">\n            <p>Financial freedom doesn't mean you'll be rich or wealthy. It simply means that you will be able to \n                live comfortably and not have to worry about if you'll have enough money to pay the rent,\n                or, if your vehicle gives you a \"surprise\" that will need immediate attention to be fixed. If you\n                feel like <b>Envisioning Your Future</b>, then feel free to <a href=\"ContactUs\">contact us</a> \n                for more information.\n            </p>\n        </div>\n    </div>\n";
 };
 
 exports.default = _default;
@@ -383,6 +383,9 @@ var _default = [{
 }, {
   title: "AboutUs",
   text: "About Us"
+}, {
+  title: "ContactUs",
+  text: "Contact Us"
 }, {
   title: "ProfileSettings",
   text: "Profile Settings"
@@ -19685,7 +19688,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62576" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65271" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

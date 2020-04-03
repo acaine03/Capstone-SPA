@@ -8,5 +8,6 @@ export default [
     { title: "Banking", text: "Banking" },
     { title: "Counseling", text: "Counseling" },
     { title: "AboutUs", text: "About Us" },
+    { title: "ContactUs", text: "Contact Us" },
     { title: "ProfileSettings", text: "Profile Settings" }
 ];
