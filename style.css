@@ -161,6 +161,31 @@ a:hover {
     text-align: center;
 }
 
+.greeting {
+    font-family: "Vidaloka";
+    font-size: 1em;
+    color: black;
+    align-self: flex-start;
+    line-height: 150%;
+}
+
+.bills {
+    font-family: "Vidaloka";
+    font-size: 1.1em;
+    color: black;
+    line-height: 170%;
+    align-self: flex-start;
+}
+
+.bills a {
+    color: #0900C3;
+    font-size: 0.5em;
+}
+
+.obligations {
+    color: black;
+}
+
 footer {
     color: black;
     width: 100%;
