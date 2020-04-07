@@ -29,7 +29,7 @@ export default () => `
 
         <div class="bills">
 
-            Monthly Income: $${incomeBank}  <a>change</a><br><br>
+            Estimated Monthly Income: $${incomeBank}  <a>change</a><br><br>
             Electric Bill Total: $${ameren}  <a>change</a><br>
             Gas Bill Total: $${spire}  <a>change</a><br>
             Internet Bill: $${internet}  <a>change</a><br>
