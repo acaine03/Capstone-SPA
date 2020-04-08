@@ -23,32 +23,41 @@ export default () => `
 
         <div class="greeting">
 
-            Hello, ${client}.
+            Hello, ${client}.<br>
 
         </div>
 
-        <div class="bills">
+        <div class="summary-content">
 
-            Estimated Monthly Income: $${incomeBank}  <a>change</a><br><br>
-            Electric Bill Total: $${ameren}  <a>change</a><br>
-            Gas Bill Total: $${spire}  <a>change</a><br>
-            Internet Bill: $${internet}  <a>change</a><br>
-            Car Payment: $${carPayment}  <a>change</a><br>
-            Insurance: $${insurance}  <a>change</a><br>
-            Rent/Mortgage: $${rent}  <a>change</a><br>
-            Phone Bill: $${phone}  <a>change</a><br>
-            Total expenses: $${totalBills}<br><br>
-            Potential Savings: $${leftOver}
+            <div class="bills">
+
+                Estimated Monthly Income: $${incomeBank}  <a>change</a><br><br>
+                Electric Bill Total: $${ameren}  <a>change</a><br>
+                Gas Bill Total: $${spire}  <a>change</a><br>
+                Internet Bill: $${internet}  <a>change</a><br>
+                Car Payment: $${carPayment}  <a>change</a><br>
+                Insurance: $${insurance}  <a>change</a><br>
+                Rent/Mortgage: $${rent}  <a>change</a><br>
+                Phone Bill: $${phone}  <a>change</a><br>
+                Total expenses: $${totalBills}<br><br>
+                Potential Savings: $${leftOver}
 
 
+            </div>
+
+            <div class="obligations">
+
+                <h2>Obligations</h2>
+
+                <div class="other-expenses">
+
+                    Monthly Groceries: $ <br>
+                    Monthly Gas: $
+
+                </div>
+            
+            </div>
         </div>
-
-        <div class="obligations">
-
-            <h2>Obligations</h2>
-        
-        </div>
-
         
     </div>
 `;

@@ -64,7 +64,7 @@ a:hover {
     background-color: #6F0765;
     font-family: "Vidaloka";
     font-size: 1.3em;
-    min-height: 400px;
+    min-height: 450px;
     line-height: 170%;
 }
 
@@ -110,6 +110,13 @@ a:hover {
     color: royalblue;
 }
 
+.about-us {
+    display: contents;
+    font-family: "Vidaloka";
+    font-size: 1em;
+    line-height: 150%;
+}
+
 .about-us-heading {
     font: Aclonica;
     color: black;
@@ -148,6 +155,7 @@ a:hover {
     flex-flow: row wrap;
     justify-content: space-around;
     padding: 2%;
+    line-height: 200%;
 }
 
 .home-nav img {
@@ -166,7 +174,7 @@ a:hover {
     font-size: 1em;
     color: black;
     align-self: flex-start;
-    line-height: 150%;
+    line-height: 300%;
 }
 
 .bills {
@@ -175,6 +183,7 @@ a:hover {
     color: black;
     line-height: 170%;
     align-self: flex-start;
+    margin-right: 15%;
 }
 
 .bills a {
@@ -182,8 +191,20 @@ a:hover {
     font-size: 0.5em;
 }
 
+.summary-content {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+}
+
 .obligations {
+    font-family: "Vidaloka";
+    font-size: 1.1em;
     color: black;
+    line-height: 170%;
+    align-self: flex-start;
+    margin-right: 15%;
+
 }
 
 footer {

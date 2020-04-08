@@ -9,5 +9,6 @@ export default [
     { title: "Counseling", text: "Counseling" },
     { title: "AboutUs", text: "About Us" },
     { title: "ContactUs", text: "Contact Us" },
-    { title: "ProfileSettings", text: "Profile Settings" }
+    { title: "ProfileSettings", text: "Profile Settings" },
+    { title: "SignIn", text: "Log Out" },
 ];
