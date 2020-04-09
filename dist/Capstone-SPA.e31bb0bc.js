@@ -138,6 +138,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
+// if (link === "Log Out" && state.user.signedin === true){
+//   return `<a href="/${link.title}"> ${link.text}</a></<a>`
+// } else if (link !== "logout"){
+//   return `<a href="/${link.title}"> ${link.text}</a>`
+// } 
 var _default = function _default(links) {
   return "\n<div class=\"main-section\">\n\n<div class=\"left-side-nav\">\n  <ul>\n  ".concat(links.map(function (link) {
     return "<a href=\"/".concat(link.title, "\">").concat(link.text, "</a><br>");
@@ -182,7 +187,7 @@ var apartmentsPage = require('../../img/apartment.jpg');
 var counselingPage = require('../../img/counseling.jpg');
 
 var _default = function _default() {
-  return "\n\n    <div class=\"right-side-content\">\n    \n        <div class=\"home-nav\">\n\n          <a href=\"/Summary\"><img src=\"".concat(summaryPage, "\" class=\"summary\"><figcaption>Summary</figcaption></a>\n          <a><img src=\"").concat(educationPage, "\" class=\"education\"><figcaption>Education</figcaption></a>\n          <a><img src=\"").concat(vehiclePage, "\" class=\"vehicle\"><figcaption>Your Vehicle</figcaption></a>\n          <a><img src=\"").concat(apartmentsPage, "\" class=\"apartments\"><figcaption>Apartments</figcaption></a>\n          <a><img src=\"").concat(billPayPage, "\" class=\"bill pay\"><figcaption>Bill Pay</figcaption></a>\n          <a><img src=\"").concat(bankingPage, "\" class=\"banking\"><figcaption>Banking</figcaption></a>\n          <a><img src=\"").concat(counselingPage, "\" class=\"counseling\"><figcaption>Counseling</figcaption></a>\n\n        </div>\n\n    </div>\n");
+  return "\n\n    <div class=\"right-side-content\">\n\n    <div class=\"home-greeting\">\n\n    <h3>Hello, Admin.</h3>\n    \n    </div>  \n    \n        <div class=\"home-nav\">\n\n          <a href=\"/Summary\"><img src=\"".concat(summaryPage, "\" class=\"summary\"><figcaption>Summary</figcaption></a>\n          <a><img src=\"").concat(educationPage, "\" class=\"education\"><figcaption>Education</figcaption></a>\n          <a><img src=\"").concat(vehiclePage, "\" class=\"vehicle\"><figcaption>Your Vehicle</figcaption></a>\n          <a><img src=\"").concat(apartmentsPage, "\" class=\"apartments\"><figcaption>Apartments</figcaption></a>\n          <a><img src=\"").concat(billPayPage, "\" class=\"bill pay\"><figcaption>Bill Pay</figcaption></a>\n          <a><img src=\"").concat(bankingPage, "\" class=\"banking\"><figcaption>Banking</figcaption></a>\n          <a><img src=\"").concat(counselingPage, "\" class=\"counseling\"><figcaption>Counseling</figcaption></a>\n\n        </div>\n\n    </div>\n");
 };
 
 exports.default = _default;
@@ -233,7 +238,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var client = "Admin";
-var incomeBank = 3328.92;
+var incomeBank = 3828.92;
 var ameren = 140.23;
 var spire = 92.12;
 var internet = 162.38;
@@ -241,12 +246,38 @@ var carPayment = 1000.32;
 var insurance = 200.12;
 var rent = 1274.52;
 var phone = 250.23;
+var groceries = 300;
+var gas = 120;
+var oil = 100;
+var clothing = 80;
+var games = 60;
+var recreational = 200;
 var totalBills = [ameren + spire + internet + carPayment + insurance + rent + phone];
 console.log(totalBills);
 var leftOver = [incomeBank - totalBills];
+console.log(leftOver);
+var obligations = [groceries + gas + oil];
+console.log(obligations);
+var misc = [clothing + games + recreational];
+console.log(misc);
+var moneyInPocket = [leftOver - obligations];
+console.log(moneyInPocket);
 
 var _default = function _default() {
-  return "\n    <div class=\"right-side-content\">\n\n        <div class=\"greeting\">\n\n            Hello, ".concat(client, ".<br>\n\n        </div>\n\n        <div class=\"summary-content\">\n\n            <div class=\"bills\">\n\n                Estimated Monthly Income: $").concat(incomeBank, "  <a>change</a><br><br>\n                Electric Bill Total: $").concat(ameren, "  <a>change</a><br>\n                Gas Bill Total: $").concat(spire, "  <a>change</a><br>\n                Internet Bill: $").concat(internet, "  <a>change</a><br>\n                Car Payment: $").concat(carPayment, "  <a>change</a><br>\n                Insurance: $").concat(insurance, "  <a>change</a><br>\n                Rent/Mortgage: $").concat(rent, "  <a>change</a><br>\n                Phone Bill: $").concat(phone, "  <a>change</a><br>\n                Total expenses: $").concat(totalBills, "<br><br>\n                Potential Savings: $").concat(leftOver, "\n\n\n            </div>\n\n            <div class=\"obligations\">\n\n                <h2>Obligations</h2>\n\n                <div class=\"other-expenses\">\n\n                    Monthly Groceries: $ <br>\n                    Monthly Gas: $\n\n                </div>\n            \n            </div>\n        </div>\n        \n    </div>\n");
+  return "\n    <div class=\"right-side-content\">\n\n        <div class=\"summary-greeting\">\n\n            <h3>Hello, ".concat(client, ".</h3><br>\n\n        </div>\n\n        <div class=\"summary-content\">\n\n            <div class=\"bills\">\n\n                <h2>Bills</h2>\n                Estimated Monthly Income: $").concat(incomeBank, "  <a>change</a><br><br>\n                Electric Bill Total: $").concat(ameren, "  <a>change</a><br>\n                Gas Bill Total: $").concat(spire, "  <a>change</a><br>\n                Internet Bill: $").concat(internet, "  <a>change</a><br>\n                Car Payment: $").concat(carPayment, "  <a>change</a><br>\n                Insurance: $").concat(insurance, "  <a>change</a><br>\n                Rent/Mortgage: $").concat(rent, "  <a>change</a><br>\n                Phone Bill: $").concat(phone, "  <a>change</a><br>\n                Total expenses: $").concat(totalBills, "<br><br>\n                When bills are payed: $").concat(leftOver, "\n\n\n            </div>\n\n            <div class=\"obligations\">\n\n                <h2>Obligations</h2>\n\n                <div class=\"other-expenses\">\n\n                    Monthly Groceries: $").concat(groceries, " <a>change</a><br>\n                    Monthly Gas: $").concat(gas, " <a>change</a><br>\n                    Oil Change: $").concat(oil, " <a>change</a><br><br>\n\n                    Total: $").concat(obligations, "\n\n                </div>\n\n                <div class=\"misc\">\n\n                    <h2>Miscellaneous</h2>\n                    Clothing: $").concat(clothing, " <a>change</a><br>\n                    Games: $").concat(games, " <a>change</a><br>\n                    Recreational: $").concat(recreational, " <a>change</a><br><br>\n\n                    Total: $").concat(misc, "\n\n                </div>\n\n            </div>\n\n            <div class=\"money-in-pocket\">\n                    \n                <h2>Decisions</h2>\n                \n                Money left over before misc. spending: $").concat(moneyInPocket, " <br>\n                \n            </div>\n\n        </div>\n\n        \n        \n    </div>\n");
+};
+
+exports.default = _default;
+},{}],"components/views/ContactUs.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _default = function _default() {
+  return "\n    <div class=\"right-side-content\">\n\n        <div class=\"contact-us\">\n\n            <h2>Contact Us</h2>\n        \n        </div>\n\n        <div class=\"contact-information\">\n            \n            Address: ### Street<br>\n            City, State Zip<br><br>\n            \n            Office Phone: 314 555 0000<br>\n            Email: EYF@gmail.com\n\n        </div>\n\n\n\n    </div>    \n";
 };
 
 exports.default = _default;
@@ -286,6 +317,12 @@ Object.defineProperty(exports, "Summary", {
     return _Summary.default;
   }
 });
+Object.defineProperty(exports, "ContactUs", {
+  enumerable: true,
+  get: function () {
+    return _ContactUs.default;
+  }
+});
 
 var _Home = _interopRequireDefault(require("./Home"));
 
@@ -297,8 +334,10 @@ var _SignIn = _interopRequireDefault(require("./SignIn"));
 
 var _Summary = _interopRequireDefault(require("./Summary"));
 
+var _ContactUs = _interopRequireDefault(require("./ContactUs"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./Home":"components/views/Home.js","./AboutUs":"components/views/AboutUs.js","./Form":"components/views/Form.js","./SignIn":"components/views/SignIn.js","./Summary":"components/views/Summary.js"}],"components/Main.js":[function(require,module,exports) {
+},{"./Home":"components/views/Home.js","./AboutUs":"components/views/AboutUs.js","./Form":"components/views/Form.js","./SignIn":"components/views/SignIn.js","./Summary":"components/views/Summary.js","./ContactUs":"components/views/ContactUs.js"}],"components/Main.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -465,6 +504,18 @@ var _default = {
   view: "Summary"
 };
 exports.default = _default;
+},{}],"store/ContactUs.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  header: "Contact Us",
+  view: "ContactUs"
+};
+exports.default = _default;
 },{}],"store/index.js":[function(require,module,exports) {
 "use strict";
 
@@ -507,6 +558,12 @@ Object.defineProperty(exports, "Summary", {
     return _Summary.default;
   }
 });
+Object.defineProperty(exports, "ContactUs", {
+  enumerable: true,
+  get: function () {
+    return _ContactUs.default;
+  }
+});
 
 var _Home = _interopRequireDefault(require("./Home"));
 
@@ -520,8 +577,10 @@ var _SignIn = _interopRequireDefault(require("./SignIn"));
 
 var _Summary = _interopRequireDefault(require("./Summary"));
 
+var _ContactUs = _interopRequireDefault(require("./ContactUs"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./Home":"store/Home.js","./Links":"store/Links.js","./Form":"store/Form.js","./AboutUs":"store/AboutUs.js","./SignIn":"store/SignIn.js","./Summary":"store/Summary.js"}],"node_modules/navigo/lib/navigo.min.js":[function(require,module,exports) {
+},{"./Home":"store/Home.js","./Links":"store/Links.js","./Form":"store/Form.js","./AboutUs":"store/AboutUs.js","./SignIn":"store/SignIn.js","./Summary":"store/Summary.js","./ContactUs":"store/ContactUs.js"}],"node_modules/navigo/lib/navigo.min.js":[function(require,module,exports) {
 var define;
 !function(e,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):e.Navigo=t()}(this,function(){"use strict";var e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function t(){return!("undefined"==typeof window||!window.history||!window.history.pushState)}function n(e,n,o){this.root=null,this._routes=[],this._useHash=n,this._hash=void 0===o?"#":o,this._paused=!1,this._destroyed=!1,this._lastRouteResolved=null,this._notFoundHandler=null,this._defaultHandler=null,this._usePushState=!n&&t(),this._onLocationChange=this._onLocationChange.bind(this),this._genericHooks=null,this._historyAPIUpdateMethod="pushState",e?this.root=n?e.replace(/\/$/,"/"+this._hash):e.replace(/\/$/,""):n&&(this.root=this._cLoc().split(this._hash)[0].replace(/\/$/,"/"+this._hash)),this._listen(),this.updatePageLinks()}function o(e){return e instanceof RegExp?e:e.replace(/\/+$/,"").replace(/^\/+/,"^/")}function i(e){return e.replace(/\/$/,"").split("/").length}function s(e,t){return i(t)-i(e)}function r(e,t){return function(e){return(arguments.length>1&&void 0!==arguments[1]?arguments[1]:[]).map(function(t){var i=function(e){var t=[];return{regexp:e instanceof RegExp?e:new RegExp(e.replace(n.PARAMETER_REGEXP,function(e,o,i){return t.push(i),n.REPLACE_VARIABLE_REGEXP}).replace(n.WILDCARD_REGEXP,n.REPLACE_WILDCARD)+n.FOLLOWED_BY_SLASH_REGEXP,n.MATCH_REGEXP_FLAGS),paramNames:t}}(o(t.route)),s=i.regexp,r=i.paramNames,a=e.replace(/^\/+/,"/").match(s),h=function(e,t){return 0===t.length?null:e?e.slice(1,e.length).reduce(function(e,n,o){return null===e&&(e={}),e[t[o]]=decodeURIComponent(n),e},null):null}(a,r);return!!a&&{match:a,route:t,params:h}}).filter(function(e){return e})}(e,t)[0]||!1}function a(e,t){var n=t.map(function(t){return""===t.route||"*"===t.route?e:e.split(new RegExp(t.route+"($|/)"))[0]}),i=o(e);return n.length>1?n.reduce(function(e,t){return e.length>t.length&&(e=t),e},n[0]):1===n.length?n[0]:i}function h(e,n,o){var i,s=function(e){return e.split(/\?(.*)?$/)[0]};return void 0===o&&(o="#"),t()&&!n?s(e).split(o)[0]:(i=e.split(o)).length>1?s(i[1]):s(i[0])}function u(t,n,o){if(n&&"object"===(void 0===n?"undefined":e(n))){if(n.before)return void n.before(function(){(!(arguments.length>0&&void 0!==arguments[0])||arguments[0])&&(t(),n.after&&n.after(o))},o);if(n.after)return t(),void(n.after&&n.after(o))}t()}return n.prototype={helpers:{match:r,root:a,clean:o,getOnlyURL:h},navigate:function(e,t){var n;return e=e||"",this._usePushState?(n=(n=(t?"":this._getRoot()+"/")+e.replace(/^\/+/,"/")).replace(/([^:])(\/{2,})/g,"$1/"),history[this._historyAPIUpdateMethod]({},"",n),this.resolve()):"undefined"!=typeof window&&(e=e.replace(new RegExp("^"+this._hash),""),window.location.href=window.location.href.replace(/#$/,"").replace(new RegExp(this._hash+".*$"),"")+this._hash+e),this},on:function(){for(var t=this,n=arguments.length,o=Array(n),i=0;i<n;i++)o[i]=arguments[i];if("function"==typeof o[0])this._defaultHandler={handler:o[0],hooks:o[1]};else if(o.length>=2)if("/"===o[0]){var r=o[1];"object"===e(o[1])&&(r=o[1].uses),this._defaultHandler={handler:r,hooks:o[2]}}else this._add(o[0],o[1],o[2]);else"object"===e(o[0])&&Object.keys(o[0]).sort(s).forEach(function(e){t.on(e,o[0][e])});return this},off:function(e){return null!==this._defaultHandler&&e===this._defaultHandler.handler?this._defaultHandler=null:null!==this._notFoundHandler&&e===this._notFoundHandler.handler&&(this._notFoundHandler=null),this._routes=this._routes.reduce(function(t,n){return n.handler!==e&&t.push(n),t},[]),this},notFound:function(e,t){return this._notFoundHandler={handler:e,hooks:t},this},resolve:function(e){var n,o,i=this,s=(e||this._cLoc()).replace(this._getRoot(),"");this._useHash&&(s=s.replace(new RegExp("^/"+this._hash),"/"));var a=function(e){return e.split(/\?(.*)?$/).slice(1).join("")}(e||this._cLoc()),l=h(s,this._useHash,this._hash);return!this._paused&&(this._lastRouteResolved&&l===this._lastRouteResolved.url&&a===this._lastRouteResolved.query?(this._lastRouteResolved.hooks&&this._lastRouteResolved.hooks.already&&this._lastRouteResolved.hooks.already(this._lastRouteResolved.params),!1):(o=r(l,this._routes))?(this._callLeave(),this._lastRouteResolved={url:l,query:a,hooks:o.route.hooks,params:o.params,name:o.route.name},n=o.route.handler,u(function(){u(function(){o.route.route instanceof RegExp?n.apply(void 0,o.match.slice(1,o.match.length)):n(o.params,a)},o.route.hooks,o.params,i._genericHooks)},this._genericHooks,o.params),o):this._defaultHandler&&(""===l||"/"===l||l===this._hash||function(e,n,o){if(t()&&!n)return!1;if(!e.match(o))return!1;var i=e.split(o);return i.length<2||""===i[1]}(l,this._useHash,this._hash))?(u(function(){u(function(){i._callLeave(),i._lastRouteResolved={url:l,query:a,hooks:i._defaultHandler.hooks},i._defaultHandler.handler(a)},i._defaultHandler.hooks)},this._genericHooks),!0):(this._notFoundHandler&&u(function(){u(function(){i._callLeave(),i._lastRouteResolved={url:l,query:a,hooks:i._notFoundHandler.hooks},i._notFoundHandler.handler(a)},i._notFoundHandler.hooks)},this._genericHooks),!1))},destroy:function(){this._routes=[],this._destroyed=!0,this._lastRouteResolved=null,this._genericHooks=null,clearTimeout(this._listeningInterval),"undefined"!=typeof window&&(window.removeEventListener("popstate",this._onLocationChange),window.removeEventListener("hashchange",this._onLocationChange))},updatePageLinks:function(){var e=this;"undefined"!=typeof document&&this._findLinks().forEach(function(t){t.hasListenerAttached||(t.addEventListener("click",function(n){if((n.ctrlKey||n.metaKey)&&"a"==n.target.tagName.toLowerCase())return!1;var o=e.getLinkPath(t);e._destroyed||(n.preventDefault(),e.navigate(o.replace(/\/+$/,"").replace(/^\/+/,"/")))}),t.hasListenerAttached=!0)})},generate:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},n=this._routes.reduce(function(n,o){var i;if(o.name===e)for(i in n=o.route,t)n=n.toString().replace(":"+i,t[i]);return n},"");return this._useHash?this._hash+n:n},link:function(e){return this._getRoot()+e},pause:function(){var e=!(arguments.length>0&&void 0!==arguments[0])||arguments[0];this._paused=e,this._historyAPIUpdateMethod=e?"replaceState":"pushState"},resume:function(){this.pause(!1)},historyAPIUpdateMethod:function(e){return void 0===e?this._historyAPIUpdateMethod:(this._historyAPIUpdateMethod=e,e)},disableIfAPINotAvailable:function(){t()||this.destroy()},lastRouteResolved:function(){return this._lastRouteResolved},getLinkPath:function(e){return e.getAttribute("href")},hooks:function(e){this._genericHooks=e},_add:function(t){var n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:null,o=arguments.length>2&&void 0!==arguments[2]?arguments[2]:null;return"string"==typeof t&&(t=encodeURI(t)),this._routes.push("object"===(void 0===n?"undefined":e(n))?{route:t,handler:n.uses,name:n.as,hooks:o||n.hooks}:{route:t,handler:n,hooks:o}),this._add},_getRoot:function(){return null!==this.root?this.root:(this.root=a(this._cLoc().split("?")[0],this._routes),this.root)},_listen:function(){var e=this;if(this._usePushState)window.addEventListener("popstate",this._onLocationChange);else if("undefined"!=typeof window&&"onhashchange"in window)window.addEventListener("hashchange",this._onLocationChange);else{var t=this._cLoc(),n=void 0,o=void 0;(o=function(){n=e._cLoc(),t!==n&&(t=n,e.resolve()),e._listeningInterval=setTimeout(o,200)})()}},_cLoc:function(){return"undefined"!=typeof window?void 0!==window.__NAVIGO_WINDOW_LOCATION_MOCK__?window.__NAVIGO_WINDOW_LOCATION_MOCK__:o(window.location.href):""},_findLinks:function(){return[].slice.call(document.querySelectorAll("[data-navigo]"))},_onLocationChange:function(){this.resolve()},_callLeave:function(){var e=this._lastRouteResolved;e&&e.hooks&&e.hooks.leave&&e.hooks.leave(e.params)}},n.PARAMETER_REGEXP=/([:*])(\w+)/g,n.WILDCARD_REGEXP=/\*/g,n.REPLACE_VARIABLE_REGEXP="([^/]+)",n.REPLACE_WILDCARD="(?:.*)",n.FOLLOWED_BY_SLASH_REGEXP="(?:/$|$)",n.MATCH_REGEXP_FLAGS="",n});
 
@@ -586,7 +645,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58563" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49259" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

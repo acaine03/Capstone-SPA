@@ -4,3 +4,4 @@ export { default as Form } from "./Form";
 export { default as AboutUs } from "./AboutUs";
 export { default as SignIn } from "./SignIn";
 export { default as Summary } from "./Summary";
+export { default as ContactUs } from "./ContactUs";

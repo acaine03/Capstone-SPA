@@ -158,6 +158,12 @@ a:hover {
     line-height: 200%;
 }
 
+.home-greeting {
+    color: black;
+    font-family: "Vidaloka";
+    align-self: flex-start;
+}
+
 .home-nav img {
     border-radius: 10%;
     max-block-size: 10em;
@@ -169,12 +175,11 @@ a:hover {
     text-align: center;
 }
 
-.greeting {
+.summary-greeting {
     font-family: "Vidaloka";
-    font-size: 1em;
     color: black;
     align-self: flex-start;
-    line-height: 300%;
+    line-height: 0%;
 }
 
 .bills {
@@ -183,7 +188,7 @@ a:hover {
     color: black;
     line-height: 170%;
     align-self: flex-start;
-    margin-right: 15%;
+    margin-right: 10%;
 }
 
 .bills a {
@@ -203,8 +208,36 @@ a:hover {
     color: black;
     line-height: 170%;
     align-self: flex-start;
-    margin-right: 15%;
+    margin-right: 10%;
+}
 
+.obligations a {
+    color: #0900C3;
+    font-size: 0.5em;
+}
+
+.money-in-pocket {
+    font-family: "Vidaloka";
+    font-size: 1.1em;
+    color: black;
+    line-height: 170%;
+    align-self: flex-start;
+}
+
+.contact-us {
+    display: contents;
+    font-family: "Vidaloka";
+    font-size: 1em;
+    line-height: 150%;
+    color: black;
+}
+
+.contact-information {
+    display: contents;
+    font-family: "Vidaloka";
+    font-size: 1em;
+    line-height: 150%;
+    color: black;
 }
 
 footer {

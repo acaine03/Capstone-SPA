@@ -9,6 +9,12 @@ const counselingPage=require('../../img/counseling.jpg')
 export default () => `
 
     <div class="right-side-content">
+
+    <div class="home-greeting">
+
+    <h3>Hello, Admin.</h3>
+    
+    </div>  
     
         <div class="home-nav">
 
