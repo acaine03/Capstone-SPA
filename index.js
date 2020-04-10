@@ -20,6 +20,11 @@ function render(st) {console.log(st)
     ${Main(st)}
     ${Footer()}
     `;
+        // if (link === "Log Out" && state.user.signedin === true){
+//   return `<a href="/${link.title}"> ${link.text}</a></<a>`
+// } else if (link !== "logout"){
+//   return `<a href="/${link.title}"> ${link.text}</a>`
+// }
 }
 
 router.updatePageLinks();
