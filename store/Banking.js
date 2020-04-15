@@ -1,0 +1,1 @@
+export default { header: "Banking", view: "Banking" }

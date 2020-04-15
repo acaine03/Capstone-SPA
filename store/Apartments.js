@@ -1,0 +1,1 @@
+export default { header: "Apartments", view: "Apartments" }

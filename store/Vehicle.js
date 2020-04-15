@@ -1,0 +1,1 @@
+export default { header: "Your Vehicle", view: "Vehicle" }

@@ -4,3 +4,8 @@ export { default as Form } from "./Form";
 export { default as SignIn } from "./SignIn";
 export { default as Summary } from "./Summary";
 export { default as ContactUs } from "./ContactUs";
+export { default as Education } from "./Education";
+export { default as Vehicle } from "./Vehicle";
+export { default as Banking } from "./Banking";
+export { default as Apartments } from "./Apartments";
+export { default as Counseling } from "./Counseling";
